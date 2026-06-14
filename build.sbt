@@ -4,7 +4,8 @@ ThisBuild / scalaVersion := "2.13.10"
 
 lazy val root = (project in file("."))
   .settings(
-    name := "Velib"
+    name := "Velib",
+    Compile / run / mainClass := Some("Main")
   )
 
 // https://mvnrepository.com/artifact/org.apache.spark/spark-core

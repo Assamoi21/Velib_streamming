@@ -24,7 +24,17 @@ Ce projet met en place un flux de données Velib en temps réel avec Scala/Spark
 
 ### 1. Lancer le flux Scala
 
+Sur Windows, utilisez le lanceur fourni pour forcer JDK 11, qui est compatible avec Spark 3.3.1 :
+
+```bat
+run.bat
+```
+
+Sinon, vous pouvez lancer manuellement avec la bonne version Java :
+
 ```bash
+set JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-11.0.31.11-hotspot
+set PATH=%JAVA_HOME%\bin;%PATH%
 sbt run
 ```
 
